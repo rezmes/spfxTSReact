@@ -11,6 +11,7 @@ import { Heading } from './Heading';
 import { Button } from './Button';
 import { Input } from './Input';
 import { Container } from './Containter';
+import { LoggedIn } from './LoggedIn';
 
 export default class Tsreact extends React.Component < ITsreactProps, {} > {
   public render(): React.ReactElement<ITsreactProps> {
@@ -44,6 +45,7 @@ export default class Tsreact extends React.Component < ITsreactProps, {} > {
 <Button handleClick={(event, id)=>{console.log('Button clicked', event, id)}}/>
   <Input value='' handleChange={event=>console.log(event)} />
   <Container styles={{border: '2px solid green', padding: '1rem'}}/>
+  <LoggedIn />
       </div>
     </div>
   </div>
